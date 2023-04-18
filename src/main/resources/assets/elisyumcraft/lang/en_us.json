@@ -2,9 +2,15 @@
     "item.elisyumcraft.caio_little_sword": "Caio's Little Sword",
     "item.elisyumcraft.defreezy_ingot": "Defreezy Ingot",
     "item.elisyumcraft.defreezy_axe": "Defreezy Axe",
+
+
+    "item.elisyumcraft.defreezy_blueberry": "Defreezy Blueberry",
+    "item.elisyumcraft.defreezy_blueberry_seeds": "Defreezy Blueberry Seeds",
+
     
     "block.elisyumcraft.defreezy_bag": "Defreezy Bag",
 
+    "block.elisyumcraft.defreezy_blueberry_crop": "Defreezy Blueberry Crop",
     "block.elisyumcraft.defreezy_block": "Defreezy Block",
     "block.elisyumcraft.defreezy_ore": "Defreezy Ore",
     "block.elisyumcraft.deepslate_defreezy_ore": "Deepslate Defreezy Ore",

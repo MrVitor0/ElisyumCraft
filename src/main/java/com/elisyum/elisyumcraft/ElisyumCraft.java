@@ -3,6 +3,8 @@ package com.elisyum.elisyumcraft;
 import com.elisyum.elisyumcraft.block.ModBlocks;
 import com.elisyum.elisyumcraft.item.ModItems;
 
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -38,7 +40,7 @@ public class ElisyumCraft {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.DEFREEZY_BLUEBERRY_CROP.get(), RenderType.cutout());
         }
     }
 }

@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/crop",
+    "textures": {
+      "crop": "elisyumcraft:block/defreezy_blueberry_stage1"
+    },
+    "render_type": "cutout"
+  }
