@@ -1,4 +1,10 @@
 {
     "item.elisyumcraft.caio_little_sword": "Caio's Little Sword",
-    "itemGroup.elisyumcraft": "Elisyum Craft"
+    "item.elisyumcraft.defreezy_ingot": "Defreezy Ingot",
+    
+    "block.elisyumcraft.defreezy_block": "Defreezy Block",
+    "block.elisyumcraft.defreezy_ore": "Defreezy Ore",
+    "block.elisyumcraft.deepslate_defreezy_ore": "Deepslate Defreezy Ore",
+
+    "creativemodetab.elisyumtab": "Elisyum Craft"
 }

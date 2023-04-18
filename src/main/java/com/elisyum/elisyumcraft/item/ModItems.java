@@ -11,9 +11,12 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ElisyumCraft.MODID);
 
+    /** Items */
     public static final RegistryObject<Item> CaioLittleSword = ITEMS.register("caio_little_sword",
             () -> new Item(new Item.Properties()));
- 
+    public static final RegistryObject<Item> DefreezyIngot = ITEMS.register("defreezy_ingot",
+            () -> new Item(new Item.Properties()));
+    /** End */
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

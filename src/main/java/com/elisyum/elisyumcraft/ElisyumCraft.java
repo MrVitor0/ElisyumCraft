@@ -40,6 +40,10 @@ public class ElisyumCraft
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == ModCreativeModeTabs.ELISYUM_TAB) {
             event.accept(ModItems.CaioLittleSword);
+            event.accept(ModItems.DefreezyIngot);
+            event.accept(ModBlocks.DefreezyBlock);
+            event.accept(ModBlocks.DefreezyOre);
+            event.accept(ModBlocks.DefreezyDeepOre);
         }
     }
    

@@ -15,8 +15,8 @@ public class ModCreativeModeTabs {
 
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
-        ELISYUM_TAB = event.registerCreativeModeTab(new ResourceLocation(ElisyumCraft.MODID, "elisyum_craft"),
+        ELISYUM_TAB = event.registerCreativeModeTab(new ResourceLocation(ElisyumCraft.MODID, "elisyumtab"),
                 builder -> builder.icon(() -> new ItemStack(ModItems.CaioLittleSword.get()))
-                        .title(Component.translatable("creativemodetab.elisyum_craft")));
+                        .title(Component.translatable("creativemodetab.elisyumtab")));
     }
 }
