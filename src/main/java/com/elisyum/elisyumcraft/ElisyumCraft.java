@@ -4,7 +4,6 @@ import com.elisyum.elisyumcraft.item.ModItems;
 import com.elisyum.elisyumcraft.item.ModCreativeModeTabs;
 import com.elisyum.elisyumcraft.block.ModBlocks;
 
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
