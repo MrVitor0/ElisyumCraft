@@ -1,18 +1,23 @@
 package com.elisyum.elisyumcraft.item.custom;
 
+import java.util.List;
+
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 
 public class ElisyumCustomItem extends  Item {
     public ElisyumCustomItem(Properties properties) {
         super(properties);
     }
-
+    
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
@@ -23,6 +28,18 @@ public class ElisyumCustomItem extends  Item {
         }
        
         return super.use(level, player, hand);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, Level level, List<Component> list, TooltipFlag flag) {
+        
+        if(Screen.hasShiftDown()){
+            list.add(Component.literal("Banana de Pijamas de 0 a 100!").withStyle(ChatFormatting.AQUA));
+        }else{
+            list.add(Component.literal("Segure SHIFT para mais informações").withStyle(ChatFormatting.YELLOW));
+        }
+
+        super.appendHoverText(stack, level, list, flag);
     }
 
     private void outputRandomNumber(Player player) {
