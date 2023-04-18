@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "elisyumcraft:defreezy_block"
+        }
+    ],
+    "result": {
+        "item": "elisyumcraft:defreezy_ingot",
+        "count": 9
+    }
+}
