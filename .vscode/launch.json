@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Gradle Run",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "org.gradle.wrapper.GradleWrapperMain",
+            "projectName": "ElisyumCraft",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "runClient"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
