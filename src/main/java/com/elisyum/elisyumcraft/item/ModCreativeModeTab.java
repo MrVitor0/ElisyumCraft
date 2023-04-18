@@ -8,7 +8,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab ELISYUM_TAB = new CreativeModeTab("elisyumtab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.DefreezyBlock.get());
+            return new ItemStack(ModItems.DefreezyIngot.get());
         }
     };
 }
