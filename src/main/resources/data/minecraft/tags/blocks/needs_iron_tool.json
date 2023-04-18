@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-      "tutorialmod:defreezy_ore",
-      "tutorialmod:deepslate_defreezy_ore"
+      "elisyumcraft:defreezy_ore",
+      "elisyumcraft:deepslate_defreezy_ore"
     ]
   }
