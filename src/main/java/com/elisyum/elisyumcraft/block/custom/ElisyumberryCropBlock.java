@@ -20,7 +20,7 @@ public class ElisyumberryCropBlock extends CropBlock{
     @Override
     protected ItemLike getBaseSeedId() {
         // return ModItems.BLUEBERRY_SEEDS.get();
-        return ModItems.DefreezyAxe.get();
+        return ModItems.Defreezy_Blueberry_Seeds.get();
     }
 
     @Override
