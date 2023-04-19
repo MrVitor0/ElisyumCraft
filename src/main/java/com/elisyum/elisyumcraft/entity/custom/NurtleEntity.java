@@ -29,11 +29,11 @@ import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 
-public class ChamperEntity extends Monster implements IAnimatable{
+public class NurtleEntity extends Monster implements IAnimatable{
 
     private AnimationFactory factory = new AnimationFactory(this);
 
-    public ChamperEntity(EntityType<? extends Monster> monster, Level level) {
+    public NurtleEntity(EntityType<? extends Monster> monster, Level level) {
         super(monster, level);
     }
 
@@ -62,18 +62,18 @@ public class ChamperEntity extends Monster implements IAnimatable{
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
 
         if(event.isMoving()){
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.chomper.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.nurtle.walk", true));
             return PlayState.CONTINUE;
         }
 
        
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.chomper.idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.nurtle.idle", true));
         return PlayState.CONTINUE;
     }
 
     @Override
     public void registerControllers(AnimationData data) {
-        data.addAnimationController( new AnimationController<ChamperEntity>(this, "controller", 0, this::predicate));
+        data.addAnimationController( new AnimationController<NurtleEntity>(this, "controller", 0, this::predicate));
     }
 
     @Override

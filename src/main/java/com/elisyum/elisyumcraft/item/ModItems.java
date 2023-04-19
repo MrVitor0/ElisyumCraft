@@ -43,8 +43,8 @@ public class ModItems {
         new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).build()
      )));
      
-     public static final RegistryObject<Item> CHAMPER_SPAWN_EGG = ITEMS.register("champer_spawn_egg",
-     () -> new ForgeSpawnEggItem(ElisyumEntityTypes.CHAMPER, 0x22b341, 0x19732e, new Item.Properties().tab(ModCreativeModeTab.ELISYUM_TAB )));
+     public static final RegistryObject<Item> NURTLE_SPAWN_EGG = ITEMS.register("nurtle_spawn_egg",
+     () -> new ForgeSpawnEggItem(ElisyumEntityTypes.NURTLE, 0x22b341, 0x19732e, new Item.Properties().tab(ModCreativeModeTab.ELISYUM_TAB )));
 
 
 

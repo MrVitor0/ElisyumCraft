@@ -2,7 +2,7 @@ package com.elisyum.elisyumcraft.events;
 
 import com.elisyum.elisyumcraft.ElisyumCraft;
 import com.elisyum.elisyumcraft.entity.ElisyumEntityTypes;
-import com.elisyum.elisyumcraft.entity.custom.ChamperEntity;
+import com.elisyum.elisyumcraft.entity.custom.NurtleEntity;
 
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,7 +19,7 @@ public class ModEvents {
 
         @SubscribeEvent
         public static void entityAttributeEvent(EntityAttributeCreationEvent event){
-            event.put(ElisyumEntityTypes.CHAMPER.get(), ChamperEntity.setAttributes());
+            event.put(ElisyumEntityTypes.NURTLE.get(), NurtleEntity.setAttributes());
         }
 
     }

@@ -2,7 +2,7 @@ package com.elisyum.elisyumcraft;
 
 import com.elisyum.elisyumcraft.block.ModBlocks;
 import com.elisyum.elisyumcraft.entity.ElisyumEntityTypes;
-import com.elisyum.elisyumcraft.entity.client.ChamperRenderer;
+import com.elisyum.elisyumcraft.entity.client.NurtleRenderer;
 import com.elisyum.elisyumcraft.item.ModItems;
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -50,7 +50,7 @@ public class ElisyumCraft {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.DEFREEZY_BLUEBERRY_CROP.get(), RenderType.cutout());
 
 
-            EntityRenderers.register(ElisyumEntityTypes.CHAMPER.get(), ChamperRenderer::new);
+            EntityRenderers.register(ElisyumEntityTypes.NURTLE.get(), NurtleRenderer::new);
         }
     }
 }
