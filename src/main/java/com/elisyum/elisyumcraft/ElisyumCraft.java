@@ -1,10 +1,13 @@
 package com.elisyum.elisyumcraft;
 
 import com.elisyum.elisyumcraft.block.ModBlocks;
+import com.elisyum.elisyumcraft.entity.ElisyumEntityTypes;
+import com.elisyum.elisyumcraft.entity.client.ChamperRenderer;
 import com.elisyum.elisyumcraft.item.ModItems;
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +15,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import software.bernie.geckolib3.GeckoLib;
 
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -25,6 +29,9 @@ public class ElisyumCraft {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ElisyumEntityTypes.register(modEventBus);
+
+        GeckoLib.initialize();
 
         modEventBus.addListener(this::commonSetup);
 
@@ -41,6 +48,9 @@ public class ElisyumCraft {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.DEFREEZY_BLUEBERRY_CROP.get(), RenderType.cutout());
+
+
+            EntityRenderers.register(ElisyumEntityTypes.CHAMPER.get(), ChamperRenderer::new);
         }
     }
 }
